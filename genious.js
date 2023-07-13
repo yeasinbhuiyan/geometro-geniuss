@@ -10,15 +10,84 @@ function setInput(elementId) {
 }
 
 // random color genaret 
-function getColor(elementId){
+function getColor(){
+//    const select document.getElementById('card-color')
 
     const ranDom = Math.floor(Math.random() * 16777215);
    const ranDomCode = "#" + ranDom.toString(16)
+//    const color = 
+// document.body.style.backgroundColor =ranDomCode
+return ranDomCode
+  
 
 
-   document.querySelector(elementId).style.backgroundColor = ranDomCode
+  
 
 }
+
+// random color genaret  final
+
+document.getElementById('card-one-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-one-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+document.getElementById('card-four-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-four-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+document.getElementById('card-six-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-six-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+document.getElementById('card-two-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-two-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+document.getElementById('card-three-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-three-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+document.getElementById('card-five-color').addEventListener('mouseenter',function(){
+    const color = document.getElementById('card-five-color')
+   
+    const ranDom = Math.floor(Math.random() * 16777215);
+   const ranDomCode = "#" + ranDom.toString(16)
+    color.style.backgroundColor = ranDomCode
+})
+
+// document.querySelector('#card-one-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
+// document.querySelector('#card-two-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
+// document.querySelector('#card-three-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
+// document.querySelector('#card-four-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
+// document.querySelector('#card-five-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
+// document.querySelector('#card-six-color').addEventListener('mouseenter',function(){
+//     getColor()
+// })
 
 
 // table data
@@ -77,7 +146,7 @@ document.getElementById('card-one-btn').addEventListener('click', function () {
     const secondInput = setInput('triangle-field-second')
     const name = "Triangle"
     count ++
-    // getColor()
+    getColor()
   
  
     const total = threeCount(firstInput,secondInput)
@@ -109,7 +178,7 @@ document.getElementById('card-two-btn').addEventListener('click', function () {
     const secondInput = setInput('Rectangle-field-second')
     const name = "Rectangle"
     count ++
-    // getColor()
+    getColor()
    
 
     const total = twoCount(firstInput,secondInput)
@@ -143,7 +212,7 @@ document.getElementById('card-three-btn').addEventListener('click', function () 
 
     const total = twoCount(b,h)
 tableData(count,total,name)
-// getColor()
+getColor()
 })
 
 
@@ -161,7 +230,7 @@ document.getElementById('card-four-btn').addEventListener('click', function () {
     const total = twoCount(d1,d2)
   
         tableData(count,total,name)
-        // getColor()
+        getColor()
 
 })
 
@@ -184,7 +253,7 @@ document.getElementById('card-five-btn').addEventListener('click', function () {
         tableData(count,total,name)
 
     
-        // getColor()
+        getColor()
 
 
 })
@@ -208,7 +277,7 @@ document.getElementById('card-six-btn').addEventListener('click', function () {
     tableData(count,total,name)
 
 
-// getColor()
+getColor()
 
 })
 
